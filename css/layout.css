@@ -1,0 +1,11 @@
+#app {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    padding: 5rem 8.125rem ;
+    background-color: var(--background-color);
+}

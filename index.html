@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/index.css">
+    <title>FestVite | Crie seu convite</title>
+</head>
+<body>
+    <div id="app">
+        <aside class="brand">
+            <img src="./assets/icons/Logo (1).svg" alt="icone de logo do site">
+            <h1>Festivite</h1>
+            <p>Crie um convite digital para o seu evento</p>
+        </aside>
+    
+        <main>
+            <h1>Crie seu convite</h1>
+            <form>
+                <div class="about">
+                    <div class="title">
+                        <img src="./assets/icons/calendar.svg" alt="icone de calendario">
+                        <legend>Sobre o evento</legend>
+                    </div>
+                    <div class="about-wrapper">
+                        <div class="input-wrapper">
+                            <label for="name-event">Título</label>
+                            <input type="text" name="name-event" id="name-event" placeholder="Nome do evento">
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="start">Início</label>
+                            <input type="date" name="start" id="start">
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="end">Fim</label>
+                            <input type="date" name="end" id="end">
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="tipo-event">Tipo</label>
+                            <div class="type-event">
+                                <label>
+                                    <input type="radio" name="tipo-event" id="tipo-event" value="presencial">
+                                    <img src="./assets/icons/building-2.svg" alt="icone de predio">
+                                    <span class="radio-mark"></span>
+                                    <span>Presencial</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="tipo-event" id="tipo-event" value="online">
+                                    <img src="./assets/icons/video.svg" alt="icone de uma camera">
+                                    <span class="radio-mark"></span>
+                                    <span>Online</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="local">Local</label>
+                            <input type="text" name="local" id="local" placeholder="Link ou endereço">
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="description">Descrição</label>
+                            <textarea name="description" id="description" placeholder="Escreva sobre os detalhes do evento"></textarea>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="customization">
+                    <div class="title">
+                        <img src="./assets/icons/paintbrush-vertical.svg" alt="icone de pincel">
+                        <legend>Customização</legend>
+                    </div>
+
+                    <div class="custon-wrapper">
+                        <label>Cor principal</label>
+                        <div class="colors-wrapper">
+                            <div class="colors brand-light">
+                                <div class="color">
+                                    <input type="radio" name="color" id="color">
+                                </div>
+                            </div>
+
+                            <div class="colors navy">
+                                <div class="color">
+                                    <input type="radio" name="color" id="color">
+                                </div>
+                            </div>
+
+                            <div class="colors purple">
+                                <div class="color">
+                                    <input type="radio" name="color" id="color">
+                                </div>
+                            </div>
+
+                            <div class="colors fuschia">
+                                <div class="color">
+                                    <input type="radio" name="color" id="color">
+                                </div>
+                            </div>
+
+                            <div class="colors pink">
+                                <div class="color">
+                                    <input type="radio" name="color" id="color">
+                                </div>
+                            </div>
+
+                            <div class="colors danger">
+                                <div class="color">
+                                    <input type="radio" name="color" id="color">
+                                </div>
+                            </div>
+
+                            <div class="colors orange">
+                                <div class="color">
+                                    <input type="radio" name="color" id="color">
+                                </div>
+                            </div>
+
+                            <div class="colors yellow">
+                                <div class="color">
+                                    <input type="radio" name="color" id="color">
+                                </div>
+                            </div>
+
+                            <div class="colors lime">
+                                <div class="color">
+                                    <input type="radio" name="color" id="color">
+                                </div>
+                            </div>
+
+                            <div class="colors green">
+                                <div class="color">
+                                    <input type="radio" name="color" id="color">
+                                </div>
+                            </div>
+
+                            <div class="colors green">
+                                <div class="color">
+                                    <input type="radio" name="color" id="brand-light">
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="theme-event">
+                        <label>Tema do evento</label>
+                        <div class="card-container">
+                            <div class="card">
+                                <input type="radio" name="theme-event" id="niver">
+                                <img src="./assets/image/Image (1).png" alt="imagem">
+                                <label>Aniversário</label>
+                            </div>
+
+                            <div class="card">
+                                <input type="radio" name="theme-event" id="infantil">
+                                <img src="./assets/image/Image (2).png" alt="imagem">
+                                <label>infantil</label>
+                            </div>
+
+                            <div class="card">
+                                <input type="radio" name="theme-event" id="formatura">
+                                <img src="./assets/image/Image (3).png" alt="imagem">
+                                <label>Formatura</label>
+                            </div>
+
+                            <div class="card">
+                                <input type="radio" name="theme-event" id="casamento">
+                                <img src="./assets/image/Image (4).png" alt="imagem">
+                                <label>Casamento</label>
+                            </div>
+
+                            <div class="card">
+                                <input type="radio" name="theme-event" id="cha-de-bebe">
+                                <img src="./assets/image/Image (5).png" alt="imagem">
+                                <label>Chá de bebê</label>
+                            </div>
+
+                            <div class="card">
+                                <input type="radio" name="theme-event" id="cha-de-panela">
+                                <img src="./assets/image/Image (6).png" alt="imagem">
+                                <label>Chá de panela</label>
+                            </div>
+
+                            <div class="card">
+                                <input type="radio" name="theme-event" id="carnaval">
+                                <img src="./assets/image/Image (7).png" alt="imagem">
+                                <label>Carnaval</label>
+                            </div>
+
+                            <div class="card">
+                                <input type="radio" name="theme-event" id="pascoa">
+                                <img src="./assets/image/Image (8).png" alt="imagem">
+                                <label>Páscoa</label>
+                            </div>
+
+                            <div class="card">
+                                <input type="radio" name="theme-event" id="sao-joao">
+                                <img src="./assets/image/Image (9).png" alt="imagem">
+                                <label>São João</label>
+                            </div>
+
+                            <div class="card">
+                                <input type="radio" name="theme-event" id="halloween">
+                                <img src="./assets/image/Image (10).png" alt="imagem">
+                                <label>Halloween</label>
+                            </div>
+
+                            <div class="card">
+                                <input type="radio" name="theme-event" id="natal">
+                                <img src="./assets/image/Image (11).png" alt="imagem">
+                                <label>Natal</label>
+                            </div>
+
+                            <div class="card">
+                                <input type="radio" name="theme-event" id="outro">
+                                <img src="./assets/image/Image (12).png" alt="imagem">
+                                <label>Outro</label>
+                            </div>
+                        </div>
+                        <div class="style-file">
+                            <div class="style">
+                                <label>Estilo</label>
+                                <div class="togle">
+                                    <input type="checkbox" name="toggle" id="switch-toggle">
+                                    <span class="slider"></span>
+                                    <label>Escuro</label>
+                                </div>
+                            </div>
+                            
+                            <div class="file">
+                                <label>Foto de capa</label>
+                                <div class="drop">
+                                    <img src="./assets/icons/upload.png" alt="">
+                                    <p>Selecionar</p>
+                                    <input type="file"name="arquivo" id="arquivo">
+                                </div>
+                                <label>Nenhum arquivo selecionado</label>
+                            </div>
+                            
+                        </div>
+                        </div>
+                </div>
+
+                <div class="contact">
+                    <div class="title">
+                        <img src="./assets/icons/contact.svg" alt="icone de imagem de perfil">
+                        <legend>Dados para contato</legend>
+                    </div>
+
+                    <div class="contact-wrapper">
+                        <div class="infos">
+                            <label for="nome">Nome</label>
+                            <input type="text" name="nome" required id="nome" placeholder="Nome completo">
+                        </div>
+
+                        <div class="infos">
+                            <label for="email">E-mail</label>
+                            <input type="text" name="nome" id="email" placeholder="exemplo@email.com">
+                        </div>
+
+                        <div class="infos">
+                            <label for="telefone">Telefone</label>
+                            <input type="tel" name="nome" id="telefone" placeholder="(99) 99999-9999">
+                        </div>
+                    </div>
+                    <hr>
+                    <footer>
+                        <div class="terms">
+                            <div class="terms-wrapper">
+                                <div class="terms-input">
+                                    <div class="img"></div>
+                                    <input required type="checkbox" name="acept-terms" id="acept">
+                                </div>
+                                <label for="acept">Li e concordo com os <span>Termos e Condições</span> e com a <span>Política de Privacidade</span></label>
+                            </div>
+
+                            <div class="terms-wrapper">
+                                <div class="terms-input">
+                                    <div class="img"></div>
+                                    <input type="checkbox" name="acept-terms" id="acept">
+                                </div>
+                                <label for="acept">Aceito receber atualizações e promoções por e-mail</label>
+                            </div>
+
+                            <div class="terms-wrapper">
+                                <div class="terms-input">
+                                    <div class="img"></div>
+                                    <input type="checkbox" name="acept-terms" id="acept">
+                                </div>
+                                <label for="acept">Aceito receber atualizações e promoções por SMS</label>
+                            </div>
+                        </div>
+                        <div class="botao">
+                            <button><img src="./assets/icons/ticket.svg" alt="">Gerar convite</button>
+                        </div>
+                    </footer>
+                </div>
+                </div>
+                
+                </form>
+        </main>
+    </div>
+</body>
+</html>
